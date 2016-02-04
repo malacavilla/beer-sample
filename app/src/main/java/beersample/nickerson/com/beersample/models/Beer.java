@@ -34,6 +34,10 @@ public class Beer implements Parcelable {
     @SerializedName("beer_active")
     public int active;
 
+    public Beer() {
+
+    }
+
     public int describeContents() {
         return 0;
     }

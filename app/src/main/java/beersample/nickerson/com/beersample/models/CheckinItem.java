@@ -20,6 +20,10 @@ public class CheckinItem implements Parcelable {
         return 0;
     }
 
+    public CheckinItem() {
+
+    }
+
     public void writeToParcel(Parcel out, int flags) {
         out.writeParcelable(beer, flags);
         out.writeParcelable(brewery, flags);

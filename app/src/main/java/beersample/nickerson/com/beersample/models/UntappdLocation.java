@@ -22,6 +22,10 @@ public class UntappdLocation implements Parcelable {
     @SerializedName("lng")
     public double longitude;
 
+    public UntappdLocation() {
+
+    }
+
     public int describeContents() {
         return 0;
     }
