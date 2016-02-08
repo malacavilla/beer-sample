@@ -62,7 +62,7 @@ public final class UserCheckinsActivityTest {
 
     private class UserCheckinsActivityUnderTest extends UserCheckinsActivity {
         @Override
-        void queryUserCheckins(String userName) {
+        void queryUserCheckins() {
             queryResponseListener.onResponse(QueryFullResponseFixture.getFullObject());
         }
     }

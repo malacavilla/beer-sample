@@ -33,13 +33,13 @@ public class UserCheckinsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        queryUserCheckins("malacavilla");
+        queryUserCheckins();
     }
 
     @VisibleForTesting
-    void queryUserCheckins(final String userName) {
-        final GsonRequest<QueryFullResponse> queryRequest = UntappdRequestFactory.getUserFeed(this,
-                userName, queryResponseListener);
+    void queryUserCheckins() {
+        final GsonRequest<QueryFullResponse> queryRequest = UntappdRequestFactory
+                .getRecentCheckins(this, queryResponseListener);
 
         mRequestQueue.add(queryRequest);
     }
